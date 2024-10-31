@@ -1,0 +1,48 @@
+/**
+ * Styles for the URL add form.
+ */
+
+@import "admin.constants.less";
+
+/** URL **/
+.nicebackgrounds-input-url {
+	input[type=url] {
+		width: 97%;
+	}
+
+	label {
+		cursor: default;
+		display: block;
+	}
+}
+
+.nicebackgrounds-url {
+
+	.add-status {
+		margin-top: 1em;
+		padding: 5px 10px;
+		display: none;
+		font-size: 1.2em;
+	}
+
+	.add-status-wait {
+		color: @wait-color;
+	}
+
+	.add-status-success {
+		color: @success-color-dark;
+	}
+
+	.add-status-failure {
+		color: @failure-color;
+	}
+
+	.add-status-error {
+		color: @error-color;
+	}
+
+}
+
+.nicebackgrounds-url-message {
+	font-size: 12px;
+}

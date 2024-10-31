@@ -1,0 +1,49 @@
+/**
+ * Styles for the Reserves add form.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-reserves-container {
+	width: 97%;
+	padding: 0;
+	margin: 0;
+}
+
+.nicebackgrounds-reserves-choices {
+	height: 170px;
+	white-space: nowrap;
+	padding: 10px;
+	padding-bottom: 20px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	background-color: white;
+
+	.nicebackgrounds-status-wait {
+		.spinner;
+		color: @wait-color;
+		display: none;
+	}
+
+	&:not(.nicebackgrounds-reserves-choices-done):not(.nicebackgrounds-reserves-choices-failure) .nicebackgrounds-status-wait {
+		display: block;
+	}
+
+	.nicebackgrounds-status-failure {
+		display: none;
+		color: @failure-color;
+	}
+
+	.dashicons-warning {
+		color: @warning-color;
+	}
+
+	.nicebackgrounds-thumb {
+		cursor: pointer;
+	}
+
+}
+
+.nicebackgrounds-reserves-choices-failure .nicebackgrounds-status-failure {
+	display: block;
+}

@@ -1,0 +1,40 @@
+/**
+ * Styles for the settings and instructions that appear at the bottom of the admin page.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-css-settings {
+	margin-top: 2em;
+
+	.nicebackgrounds-auto-apply {
+		margin-left: 2em;
+
+		.nicebackgrounds-sel-help {
+			text-decoration: none;
+			.unlike-an-input-or-link();
+		}
+
+		.nicebackgrounds-input-sel input {
+			width: 97%;
+		}
+
+	}
+
+	.nicebackgrounds-instructions {
+		background: white;
+		padding: 0.5em;
+		width: 97%;
+		clear: both;
+		.nicebackgrounds-instructions-code {
+			font-family: monospace;
+			font-size: 11px;
+			opacity: 0.66;
+			margin-bottom: 0.5em;
+			em {
+				color: @attention-color;
+			}
+		}
+	}
+
+}

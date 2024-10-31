@@ -1,0 +1,861 @@
+/**
+ * Styles for the links in the top right corner of the admin page.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+/** New set widget **/
+#nicebackgrounds-new-set-container {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: right;
+  white-space: nowrap;
+}
+#nicebackgrounds-new-set-container .nicebackgrounds-input-new-set-form {
+  position: absolute;
+  right: 0;
+  top: 2em;
+  z-index: 2;
+  display: none;
+}
+#nicebackgrounds-new-set-container input[type=text] {
+  width: 150px;
+  margin-right: 0.25em;
+  position: relative;
+  top: 2px;
+}
+#nicebackgrounds-new-set {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none !important;
+}
+/** Action links **/
+.nicebackgrounds-set-actions {
+  float: right;
+  white-space: nowrap;
+  padding-bottom: 0.5em;
+}
+.nicebackgrounds-action-link {
+  display: inline;
+  position: relative;
+}
+.nicebackgrounds-action-link .nicebackgrounds-form-row {
+  position: absolute;
+  left: 0;
+  top: 2em;
+  z-index: 2;
+  display: none;
+}
+.nicebackgrounds-action-link input[type=text] {
+  width: 150px;
+  margin-right: 0.25em;
+  position: relative;
+  top: 2px;
+}
+.nicebackgrounds-set-actions a {
+  text-decoration: none;
+  margin-left: 2em;
+  outline: none;
+  box-shadow: none !important;
+}
+.nicebackgrounds-action-link-delete button {
+  margin-left: 2em;
+}
+
+/**
+ * Keyframe animations that are used in various styles.
+ */
+@-webkit-keyframes nicebackgrounds-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes nicebackgrounds-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/**
+ * Styles for the settings and instructions that appear at the bottom of the admin page.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-css-settings {
+  margin-top: 2em;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-auto-apply {
+  margin-left: 2em;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-auto-apply .nicebackgrounds-sel-help {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none !important;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-auto-apply .nicebackgrounds-input-sel input {
+  width: 97%;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-instructions {
+  background: white;
+  padding: 0.5em;
+  width: 97%;
+  clear: both;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-instructions .nicebackgrounds-instructions-code {
+  font-family: monospace;
+  font-size: 11px;
+  opacity: 0.66;
+  margin-bottom: 0.5em;
+}
+.nicebackgrounds-css-settings .nicebackgrounds-instructions .nicebackgrounds-instructions-code em {
+  color: #D15600;
+}
+
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+
+/**
+ * Styles for the admin settings forms.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-form-row {
+  margin-bottom: 18px;
+}
+.nicebackgrounds-form-row:not(.nicebackgrounds-input-type-option) > label {
+  display: block;
+  margin-bottom: 0.25em;
+  cursor: default;
+}
+.nicebackgrounds-form-row .nicebackgrounds-form-row {
+  margin-bottom: 0;
+}
+.nicebackgrounds-form-row .nicebackgrounds-form-row > label {
+  cursor: pointer;
+  display: inline-block;
+}
+.nicebackgrounds-input-type-options .nicebackgrounds-input-type-option {
+  display: inline;
+  margin-left: 20px;
+}
+.nicebackgrounds-input-type-options .nicebackgrounds-input-type-option:first-child {
+  margin-left: 0;
+}
+.nicebackgrounds-unsplash-container {
+  margin: 1px;
+  padding: 3px 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  color: #32373c;
+  outline: 0;
+  -webkit-transition: 50ms border-color ease-in-out;
+  transition: 50ms border-color ease-in-out;
+  display: inline-block;
+  margin-bottom: 0.25em;
+}
+.nicebackgrounds-input-fixed {
+  margin-right: 2em;
+}
+.nicebackgrounds-description {
+  font-size: 0.9em;
+}
+
+/**
+ * General styles for the Nice Backgrounds plugin.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+#nicebackgrounds-wrap {
+  position: relative;
+}
+#nicebackgrounds-wrap .dashicons {
+  margin-right: 0.125em;
+}
+.add-status span.dashicons-update {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-debug {
+  margin: 2em 0;
+}
+.nicebackgrounds-debug textarea {
+  font-size: 10px;
+  background-color: #FFFF88;
+  height: 350px;
+  width: 100%;
+  font-family: monospace;
+}
+
+/**
+ * Styles for the Picklist widget.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-picklist .picklist-picked-values {
+  margin: 1px;
+  padding: 3px 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  color: #32373c;
+  outline: 0;
+  -webkit-transition: 50ms border-color ease-in-out;
+  transition: 50ms border-color ease-in-out;
+  display: inline-block;
+  margin-bottom: 0.25em;
+}
+.nicebackgrounds-picklist .picklist-picked-values.active {
+  border-color: #5b9dd9;
+  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+}
+.nicebackgrounds-picklist .picklist-value {
+  display: none;
+}
+.nicebackgrounds-picklist .picklist-freetext {
+  border: none;
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+  outline: none;
+  box-shadow: none !important;
+}
+.nicebackgrounds-picklist .picklist-picked-value,
+.nicebackgrounds-picklist .picklist-option {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 2px 5px;
+  padding-left: 10px;
+  margin-bottom: 0.25em;
+  margin-right: 0.25em;
+  font-size: 12px;
+  line-height: 18px;
+}
+.nicebackgrounds-picklist .picklist-picked-value .dashicons-no,
+.nicebackgrounds-picklist .picklist-option .dashicons-no,
+.nicebackgrounds-picklist .picklist-picked-value .dashicons-trash,
+.nicebackgrounds-picklist .picklist-option .dashicons-trash {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 0.25em;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  color: #333;
+}
+.nicebackgrounds-picklist .picklist-option {
+  background-color: rgba(127, 127, 127, 0.1);
+  cursor: copy;
+}
+.nicebackgrounds-picklist .picklist-option:hover {
+  color: #0073aa;
+}
+.nicebackgrounds-picklist .picklist-option:hover .dashicons-trash {
+  color: #333;
+}
+.nicebackgrounds-picklist .picklist-option .dashicons-trash:hover {
+  background-color: #cc0000;
+  color: white;
+}
+.nicebackgrounds-picklist .picklist-option .dashicons-trash:active {
+  cursor: wait;
+}
+.nicebackgrounds-picklist .picklist-picked-value {
+  background-color: #0073aa;
+  color: white;
+  cursor: default;
+}
+.nicebackgrounds-picklist .picklist-picked-value .dashicons-no {
+  color: #bbb;
+  cursor: pointer;
+}
+.nicebackgrounds-picklist .picklist-picked-value .dashicons-no:hover {
+  color: #eee;
+}
+.nicebackgrounds-picklist .picklist-delete-hint {
+  display: none;
+}
+
+/**
+ * Styles for the Reserves add form.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-reserves-container {
+  width: 97%;
+  padding: 0;
+  margin: 0;
+}
+.nicebackgrounds-reserves-choices {
+  height: 170px;
+  white-space: nowrap;
+  padding: 10px;
+  padding-bottom: 20px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background-color: white;
+}
+.nicebackgrounds-reserves-choices .nicebackgrounds-status-wait {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+  color: #00a0d2;
+  display: none;
+}
+.nicebackgrounds-reserves-choices:not(.nicebackgrounds-reserves-choices-done):not(.nicebackgrounds-reserves-choices-failure) .nicebackgrounds-status-wait {
+  display: block;
+}
+.nicebackgrounds-reserves-choices .nicebackgrounds-status-failure {
+  display: none;
+  color: #FF1A00;
+}
+.nicebackgrounds-reserves-choices .dashicons-warning {
+  color: #FF7400;
+}
+.nicebackgrounds-reserves-choices .nicebackgrounds-thumb {
+  cursor: pointer;
+}
+.nicebackgrounds-reserves-choices-failure .nicebackgrounds-status-failure {
+  display: block;
+}
+
+/**
+ * Styles for the status widget that pops up in the bottom right corner when the Ajax autosaves.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+/** Status widget **/
+.nicebackgrounds-status {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  color: white;
+  padding: 5px 10px 5px 8px;
+  background-color: #444;
+  z-index: 10;
+  display: none;
+}
+.nicebackgrounds-status div {
+  display: none;
+}
+.nicebackgrounds-status .dashicons {
+  margin-right: 0.25em;
+}
+.nicebackgrounds-status .nicebackgrounds-wait span {
+  color: #00a0d2;
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-status .nicebackgrounds-success span {
+  color: #008C00;
+}
+.nicebackgrounds-status .nicebackgrounds-failure span {
+  color: #FF1A00;
+}
+.nicebackgrounds-status .nicebackgrounds-error {
+  color: #cc0000 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/**
+ * Styles for the tab system.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+/** Tabs **/
+.nicebackgrounds-tab-group {
+  position: relative;
+}
+.nicebackgrounds-tabs {
+  border-bottom: 2px solid rgba(127, 127, 127, 0.1);
+  position: relative;
+}
+.nicebackgrounds-tabs > li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 20px;
+}
+.nicebackgrounds-tabs > li > span {
+  display: inline-block;
+  color: #0073aa;
+  margin-left: 5px;
+  margin-right: 6px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.nicebackgrounds-underline {
+  height: 2px;
+  border-bottom: 2px solid #00a0d2;
+  pointer-events: none;
+}
+li.nicebackgrounds-tab-active > span,
+.nicebackgrounds-tabs > li > span:hover {
+  color: #00a0d2;
+}
+.nicebackgrounds-tabs > li:last-child {
+  margin-right: 0;
+}
+.nicebackgrounds-tab-group > .nicebackgrounds-tab-panels {
+  width: 100%;
+  overflow: hidden;
+}
+.nicebackgrounds-tab-group > .nicebackgrounds-tab-panels > div {
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+.nicebackgrounds-tab-group > .nicebackgrounds-tab-panels > .nicebackgrounds-tab-active {
+  display: block;
+}
+
+/**
+ * Styles for the image thumbnails.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-thumb {
+  display: inline-block;
+  background-color: #eee;
+  margin: 10px;
+  outline: 1px solid #ccc;
+  outline-offset: 1px;
+  position: relative;
+}
+.nicebackgrounds-thumb:hover {
+  outline-color: #5b9dd9;
+  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+}
+.nicebackgrounds-thumb,
+.nicebackgrounds-thumb img {
+  height: 150px;
+  min-width: 100px;
+}
+.nicebackgrounds-thumb span.dashicons {
+  margin-right: 0 !important;
+}
+.nicebackgrounds-thumb .nicebackgrounds-dimensions {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 80%;
+  padding: 2px 4px;
+  background-color: #FFFF88;
+  line-height: 1em;
+}
+.nicebackgrounds-thumb .nicebackgrounds-modal {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 2px 0 4px;
+  margin-right: 0 !important;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  outline: none;
+  box-shadow: none !important;
+}
+.nicebackgrounds-thumb .nicebackgrounds-remove {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  text-decoration: none;
+  color: #cc0000;
+  outline: none;
+  box-shadow: none !important;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 0;
+}
+.nicebackgrounds-thumb .nicebackgrounds-remove span {
+  opacity: 0.75;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-dimensions {
+  opacity: 0.75;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-modal {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-modal:hover {
+  background-color: #ffffff;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-remove {
+  opacity: 1;
+  color: #cc0000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-remove:hover {
+  opacity: 1;
+}
+.nicebackgrounds-thumb:not(.nicebackgrounds-choosing):hover .nicebackgrounds-remove:hover span {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay span.dashicons {
+  margin-top: 60px;
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay span.dashicons-update {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay .message {
+  padding: 0 0.5em;
+  display: block;
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay-wait {
+  background-color: rgba(0, 160, 210, 0.75);
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay-success {
+  background-color: rgba(0, 110, 46, 0.75);
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay-error {
+  background-color: rgba(204, 0, 0, 0.75);
+}
+.nicebackgrounds-thumb .nicebackgrounds-overlay-failure {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #cc0000;
+}
+.nicebackgrounds-fullscreen-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99999;
+  cursor: pointer;
+}
+html.nicebackgrounds-with-fullscreen-image body #wpwrap {
+  position: relative;
+  top: -10000000000px;
+}
+.nicebackgrounds-modal-wait {
+  color: #00a0d2;
+  display: none;
+}
+.nicebackgrounds-modal-waiting .nicebackgrounds-modal-wait {
+  display: block;
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-modal-waiting .dashicons-external {
+  display: none;
+}
+
+/**
+ * Styles for the Unsplash add form.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-unsplash-container {
+  width: 97%;
+  padding: 0;
+  margin: 0;
+}
+.nicebackgrounds-unsplash-container .nicebackgrounds-unsplash-refresh {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none !important;
+}
+.nicebackgrounds-unsplash-container .nicebackgrounds-unsplash-refresh > span:before {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.nicebackgrounds-unsplash-container .nicebackgrounds-unsplash-choices {
+  height: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nicebackgrounds-unsplash-container .nicebackgrounds-options-unsplash-filters > label {
+  display: none;
+}
+.nicebackgrounds-unsplash-choices,
+.nicebackgrounds-unsplash-container form {
+  padding: 10px;
+}
+.nicebackgrounds-unsplash-container-search {
+  margin: 0;
+  position: relative;
+  padding: 18px 84px 0 20px;
+  border-top: 1px solid #eee;
+  background-color: #fefefe;
+  min-height: 54px;
+}
+.nicebackgrounds-unsplash-choices .nicebackgrounds-thumb {
+  cursor: pointer;
+}
+.nicebackgrounds-collection-display,
+.nicebackgrounds-unsplash-search {
+  clear: both;
+}
+.nicebackgrounds-input-search-featured,
+.nicebackgrounds-input-featured {
+  float: left;
+  margin-right: 2em;
+}
+.nicebackgrounds-input-search-featured,
+.nicebackgrounds-input-search-has-keywords,
+.nicebackgrounds-input-featured,
+.nicebackgrounds-input-has-keywords {
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.nicebackgrounds-unsplash-preload {
+  position: absolute;
+  left: -10000000px;
+  top: -10000000px;
+}
+.nicebackgrounds-unsplash-refresh.nicebackgrounds-active {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+
+/**
+ * Styles for the Upload add form.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+.nicebackgrounds-upload {
+  margin: 2em;
+  margin-left: 0;
+  padding: 2em;
+  position: relative;
+}
+.nicebackgrounds-upload h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+.nicebackgrounds-upload p {
+  font-size: 12px;
+  margin: .5em 0;
+}
+.nicebackgrounds-upload .add-status {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.nicebackgrounds-upload .drop-instructions {
+  display: none;
+}
+.nicebackgrounds-upload.has-advanced-upload {
+  border: 4px dashed #b4b9be;
+}
+.nicebackgrounds-upload .upload-here {
+  text-align: center;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+.nicebackgrounds-upload .upload-here input {
+  display: none;
+}
+.nicebackgrounds-upload.has-advanced-upload .drop-instructions {
+  display: block;
+}
+.nicebackgrounds-upload.is-wait,
+.nicebackgrounds-upload.is-dragover,
+.nicebackgrounds-upload.is-failure,
+.nicebackgrounds-upload.is-error,
+.nicebackgrounds-upload.is-success {
+  border-color: white;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+.nicebackgrounds-upload.is-wait,
+.nicebackgrounds-upload.is-dragover {
+  background: rgba(0, 86, 132, 0.9);
+  outline: 10px solid rgba(0, 86, 132, 0.9);
+}
+.nicebackgrounds-upload.is-failure {
+  background: rgba(54, 57, 61, 0.9);
+  outline: 10px solid rgba(54, 57, 61, 0.9);
+}
+.nicebackgrounds-upload.is-error {
+  background: rgba(204, 0, 0, 0.9);
+  outline: 10px solid rgba(204, 0, 0, 0.9);
+}
+.nicebackgrounds-upload.is-success {
+  background: rgba(0, 140, 0, 0.9);
+  outline: 10px solid rgba(0, 140, 0, 0.9);
+}
+.nicebackgrounds-upload.is-dragover p,
+.nicebackgrounds-upload.is-dragover h2 {
+  color: white;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+.nicebackgrounds-upload.is-failure .upload-here,
+.nicebackgrounds-upload.is-error .upload-here,
+.nicebackgrounds-upload.is-success .upload-here,
+.nicebackgrounds-upload.is-wait .upload-here {
+  opacity: 0;
+}
+.nicebackgrounds-upload.is-failure .add-status-failure,
+.nicebackgrounds-upload.is-error .add-status-error,
+.nicebackgrounds-upload.is-success .add-status-success,
+.nicebackgrounds-upload.is-wait .add-status-wait {
+  opacity: 1;
+}
+.nicebackgrounds-upload .message {
+  font-size: 12px;
+  padding: 1em;
+  display: block;
+}
+
+/**
+ * Styles for the URL add form.
+ */
+/**
+ * Less mixins and variables.
+ */
+.spinner {
+  -webkit-animation: 2s linear nicebackgrounds-spin infinite;
+          animation: 2s linear nicebackgrounds-spin infinite;
+}
+/** URL **/
+.nicebackgrounds-input-url input[type=url] {
+  width: 97%;
+}
+.nicebackgrounds-input-url label {
+  cursor: default;
+  display: block;
+}
+.nicebackgrounds-url .add-status {
+  margin-top: 1em;
+  padding: 5px 10px;
+  display: none;
+  font-size: 1.2em;
+}
+.nicebackgrounds-url .add-status-wait {
+  color: #00a0d2;
+}
+.nicebackgrounds-url .add-status-success {
+  color: #006E2E;
+}
+.nicebackgrounds-url .add-status-failure {
+  color: #FF1A00;
+}
+.nicebackgrounds-url .add-status-error {
+  color: #cc0000;
+}
+.nicebackgrounds-url-message {
+  font-size: 12px;
+}

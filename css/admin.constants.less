@@ -1,0 +1,52 @@
+/**
+ * Less mixins and variables.
+ */
+
+.like-an-input() {
+	margin: 1px;
+	padding: 3px 5px;
+	border: 1px solid #ddd;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+	background-color: #fff;
+	color: #32373c;
+	outline: 0;
+	transition: 50ms border-color ease-in-out;
+	display: inline-block;
+	margin-bottom: 0.25em;
+}
+
+.like-a-focused-input (@property) {
+	@{property}-color: #5b9dd9;
+	box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+}
+
+.unlike-an-input-or-link() {
+	outline: none;
+	box-shadow: none !important;
+}
+
+.spinner {
+	animation: 2s linear nicebackgrounds-spin infinite;
+}
+
+@wp-blue: #0073aa;
+@wp-blue-light: #00a0d2;
+
+@wait-color: @wp-blue-light;
+@wait-color-trans: rgba(0, 160, 210, 0.75);
+@success-color: #008C00;
+@success-color-trans: rgba(0, 110, 46, 0.75);
+@success-color-dark: #006E2E;
+@error-color: #cc0000;
+@error-color-trans: rgba(204, 0, 0, 0.75);
+@failure-color: #FF1A00;
+@failure-color-trans: rgba(0, 0, 0, 0.75);
+@warning-color: #FF7400;
+@attention-color: #D15600;
+@highlight-color: #FFFF88;
+@delete-warning-color: #cc0000;
+
+@underline-color: @wp-blue-light;
+@link-color: @wp-blue;
+@link-active-color: @wp-blue-light;
+@button-active-color: @wp-blue;

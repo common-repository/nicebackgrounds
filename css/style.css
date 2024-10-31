@@ -1,0 +1,11 @@
+/**
+ * Styles for the front-end.
+ */
+.nicebackgrounds {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body.nicebackgrounds {
+  background-attachment: fixed;
+}

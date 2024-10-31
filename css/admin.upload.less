@@ -1,0 +1,115 @@
+/**
+ * Styles for the Upload add form.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-upload {
+	margin: 2em;
+	margin-left: 0;
+	padding: 2em;
+	position: relative;
+
+	h2 {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 400;
+		margin: 0;
+	}
+
+	p {
+		font-size: 12px;
+		margin: .5em 0;
+	}
+
+	.add-status {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 100ms;
+		text-align: center;
+		font-size: 20px;
+		color: white;
+		transform: translate(0, -50%);
+	}
+
+	.drop-instructions {
+		display: none;
+	}
+
+	&.has-advanced-upload {
+		border: 4px dashed #b4b9be;
+	}
+
+	.upload-here {
+		text-align: center;
+		transition: all 100ms;
+	}
+
+	.upload-here input {
+		display: none;
+	}
+
+	&.has-advanced-upload .drop-instructions {
+		display: block;
+	}
+
+	&.is-wait,
+	&.is-dragover,
+	&.is-failure,
+	&.is-error,
+	&.is-success {
+		border-color: white;
+		transition: all 100ms;
+	}
+
+	&.is-wait,
+	&.is-dragover {
+		background: rgba(0, 86, 132, .9);
+		outline: 10px solid rgba(0, 86, 132, .9);
+	}
+
+	&.is-failure {
+		background: rgba(54, 57, 61, .9);
+		outline: 10px solid rgba(54, 57, 61, .9);
+	}
+
+	&.is-error {
+		background: rgba(204, 0, 0, .9);
+		outline: 10px solid rgba(204, 0, 0, .9);
+	}
+
+	&.is-success {
+		background: rgba(0, 140, 0, .9);
+		outline: 10px solid rgba(0, 140, 0, .9);
+	}
+
+	&.is-dragover p,
+	&.is-dragover h2 {
+		color: white;
+		transition: all 100ms;
+	}
+
+	&.is-failure .upload-here,
+	&.is-error .upload-here,
+	&.is-success .upload-here,
+	&.is-wait .upload-here {
+		opacity: 0;
+	}
+
+	&.is-failure .add-status-failure,
+	&.is-error .add-status-error,
+	&.is-success .add-status-success,
+	&.is-wait .add-status-wait {
+		opacity: 1;
+	}
+
+	.message {
+		font-size: 12px;
+		padding: 1em;
+		display: block;
+	}
+}

@@ -1,0 +1,97 @@
+/**
+ * Styles for the Picklist widget.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-picklist {
+
+	.picklist-picked-values {
+		.like-an-input();
+		&.active {
+			.like-a-focused-input (border);
+		}
+	}
+
+	.picklist-value {
+		display: none;
+	}
+
+	.picklist-freetext {
+		border: none;
+		background-color: transparent;
+		transition: none;
+		.unlike-an-input-or-link();
+	}
+
+	.picklist-picked-value,
+	.picklist-option {
+		display: inline-block;
+		border-radius: 10px;
+		padding: 2px 5px;
+		padding-left: 10px;
+		margin-bottom: 0.25em;
+		margin-right: 0.25em;
+		font-size: 12px;
+		line-height: 18px;
+
+		.dashicons-no,
+		.dashicons-trash {
+			cursor: pointer;
+			width: 14px;
+			height: 14px;
+			font-size: 14px;
+			line-height: 14px;
+			margin-left: 0.25em;
+			border-radius: 50%;
+			padding: 2px;
+			text-align: center;
+			color: #333;
+		}
+
+	}
+
+	.picklist-option {
+		background-color: rgba(127, 127, 127, 0.1);
+		cursor: copy;
+		&:hover {
+			color: @button-active-color;
+			.dashicons-trash {
+				color: #333;
+			}
+		}
+
+		.dashicons-trash {
+			&:hover {
+				background-color: @delete-warning-color;
+				color: white;
+			}
+
+			&:active {
+				cursor: wait;
+			}
+		}
+
+	}
+
+	.picklist-picked-value {
+		background-color: @button-active-color;
+		color: white;
+		cursor: default;
+
+		.dashicons-no {
+			color: #bbb;
+			cursor: pointer;
+		}
+
+		.dashicons-no:hover {
+			color: #eee;
+		}
+	}
+
+	.picklist-delete-hint {
+		display: none;
+	}
+}
+
+

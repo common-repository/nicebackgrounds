@@ -1,0 +1,93 @@
+/**
+ * Styles for the Unsplash add form.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-unsplash-container {
+	width: 97%;
+	padding: 0;
+	margin: 0;
+
+	.nicebackgrounds-unsplash-refresh {
+		width: 64px;
+		height: 64px;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+		transition: all 0.5s;
+		text-decoration: none;
+		.unlike-an-input-or-link();
+	}
+
+	.nicebackgrounds-unsplash-refresh > span:before {
+		width: 64px;
+		height: 64px;
+		font-size: 64px;
+		text-shadow: -1px -1px 0 #fff,
+			1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+	}
+
+	.nicebackgrounds-unsplash-choices {
+		height: 170px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.nicebackgrounds-options-unsplash-filters > label {
+		display: none;
+	}
+
+}
+
+.nicebackgrounds-unsplash-choices,
+.nicebackgrounds-unsplash-container form {
+	padding: 10px;
+}
+
+.nicebackgrounds-unsplash-container-search {
+	margin: 0;
+	position: relative;
+	padding: 18px 84px 0 20px;
+	border-top: 1px solid #eee;
+	background-color: #fefefe;
+	min-height: 54px;
+}
+
+.nicebackgrounds-unsplash-choices .nicebackgrounds-thumb {
+	cursor: pointer;
+}
+
+.nicebackgrounds-collection-display,
+.nicebackgrounds-unsplash-search {
+	clear: both;
+}
+
+.nicebackgrounds-input-search-featured,
+.nicebackgrounds-input-featured {
+	float: left;
+	margin-right: 2em;
+}
+
+.nicebackgrounds-input-search-featured,
+.nicebackgrounds-input-search-has-keywords,
+.nicebackgrounds-input-featured,
+.nicebackgrounds-input-has-keywords {
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+.nicebackgrounds-unsplash-preload {
+	position: absolute;
+	left: -10000000px;
+	top: -10000000px;
+}
+
+.nicebackgrounds-unsplash-refresh.nicebackgrounds-active {
+	animation: 2s linear nicebackgrounds-spin infinite;
+}
+

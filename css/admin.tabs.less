@@ -1,0 +1,68 @@
+/**
+ * Styles for the tab system.
+ */
+
+@import "admin.constants.less";
+
+/** Tabs **/
+
+.nicebackgrounds-tab-group {
+	position: relative;
+}
+
+.nicebackgrounds-tabs {
+	border-bottom: 2px solid rgba(127, 127, 127, 0.1);
+	position: relative;
+
+	> li {
+		display: inline-block;
+		margin: 0;
+		margin-right: 20px;
+	}
+
+	> li > span {
+		display: inline-block;
+		color: @link-color;
+		margin-left: 5px;
+		margin-right: 6px;
+		border-bottom: 2px solid transparent;
+		cursor: pointer;
+	}
+}
+
+.nicebackgrounds-underline {
+	height: 2px;
+	border-bottom: 2px solid @underline-color;
+	pointer-events: none;
+}
+
+li.nicebackgrounds-tab-active > span,
+.nicebackgrounds-tabs > li > span:hover {
+	color: @link-active-color;
+}
+
+.nicebackgrounds-tabs > li:last-child {
+	margin-right: 0;
+}
+
+.nicebackgrounds-tab-group {
+
+	> .nicebackgrounds-tab-panels {
+		width: 100%;
+		overflow: hidden;
+
+		> div {
+			padding-left: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			float: left;
+		}
+
+		> .nicebackgrounds-tab-active {
+			display: block;
+		}
+
+	}
+
+}
+

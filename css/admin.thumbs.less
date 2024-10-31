@@ -1,0 +1,177 @@
+/**
+ * Styles for the image thumbnails.
+ */
+@import "admin.constants.less";
+
+.nicebackgrounds-thumb {
+	display: inline-block;
+	background-color: #eee;
+	margin: 10px;
+	outline: 1px solid #ccc;
+	outline-offset: 1px;
+	position: relative;
+
+	&:hover {
+		.like-a-focused-input (outline);
+	}
+
+	&,
+	img {
+		height: 150px;
+		min-width: 100px;
+	}
+
+	span.dashicons {
+		margin-right: 0 !important;
+	}
+
+	.nicebackgrounds-dimensions {
+		opacity: 0;
+		transition: all 0.3s;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: 80%;
+		padding: 2px 4px;
+		background-color: @highlight-color;
+		line-height: 1em;
+	}
+
+	.nicebackgrounds-modal {
+		opacity: 0;
+		transition: all 0.3s;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 0 2px 0 4px;
+		margin-right: 0 !important;
+		background-color: rgba(255, 255, 255, 0.75);
+		text-decoration: none;
+		.unlike-an-input-or-link();
+	}
+
+	.nicebackgrounds-remove {
+		opacity: 0;
+		transition: all 0.3s;
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		text-decoration: none;
+		color: @delete-warning-color;
+		.unlike-an-input-or-link();
+		background: white;
+		border-radius: 50%;
+		border: 1px solid black;
+		padding: 0;
+		span {
+			opacity: 0.75;
+		}
+	}
+
+	&:not(.nicebackgrounds-choosing) {
+		&:hover {
+			.nicebackgrounds-dimensions {
+				opacity: 0.75;
+				transition: all 0.3s;
+			}
+			.nicebackgrounds-modal {
+				opacity: 1;
+				transition: all 0.3s;
+			}
+			.nicebackgrounds-modal:hover {
+				background-color: rgba(255, 255, 255, 1);
+			}
+			.nicebackgrounds-remove {
+				opacity: 1;
+				color: rgba(204, 0, 0, 1);
+				transition: all 0.3s;
+			}
+			.nicebackgrounds-remove:hover {
+				opacity: 1;
+				span {
+					opacity: 1;
+					transition: all 0.3s;
+				}
+			}
+
+		}
+
+	}
+
+	.nicebackgrounds-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: white;
+		text-align: center;
+
+		span.dashicons {
+			margin-top: 60px;
+		}
+
+		span.dashicons-update {
+			.spinner;
+		}
+
+		.message {
+			padding: 0 0.5em;
+			display: block;
+		}
+
+	}
+
+	.nicebackgrounds-overlay-wait {
+		background-color: @wait-color-trans;
+	}
+
+	.nicebackgrounds-overlay-success {
+		background-color: @success-color-trans;
+	}
+
+	.nicebackgrounds-overlay-error {
+		background-color: @error-color-trans;
+	}
+	.nicebackgrounds-overlay-failure {
+		background-color: @failure-color-trans;
+		color: @error-color;
+	}
+
+}
+
+.nicebackgrounds-fullscreen-image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: auto;
+	z-index: 99999;
+	cursor: pointer;
+}
+
+html.nicebackgrounds-with-fullscreen-image body {
+	#wpwrap {
+		position: relative;
+		top: -10000000000px;
+	}
+}
+
+.nicebackgrounds-modal-wait {
+	color: @wait-color;
+	display: none;
+}
+
+.nicebackgrounds-modal-waiting {
+	.nicebackgrounds-modal-wait {
+		display: block;
+		.spinner;
+	}
+
+	.dashicons-external {
+		display: none;
+	}
+
+}
+
+

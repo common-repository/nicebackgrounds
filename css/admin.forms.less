@@ -1,0 +1,46 @@
+/**
+ * Styles for the admin settings forms.
+ */
+
+@import "admin.constants.less";
+
+.nicebackgrounds-form-row {
+	margin-bottom: 18px;
+
+	&:not(.nicebackgrounds-input-type-option) > label {
+		display: block;
+		margin-bottom: 0.25em;
+		cursor: default;
+	}
+	.nicebackgrounds-form-row {
+		margin-bottom: 0;
+
+		 > label {
+			cursor: pointer;
+			display: inline-block;
+		}
+	}
+
+}
+
+.nicebackgrounds-input-type-options {
+	.nicebackgrounds-input-type-option {
+		display: inline;
+		margin-left: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.nicebackgrounds-unsplash-container {
+	.like-an-input();
+}
+
+.nicebackgrounds-input-fixed {
+	margin-right: 2em;
+}
+
+.nicebackgrounds-description {
+	font-size: 0.9em;
+}

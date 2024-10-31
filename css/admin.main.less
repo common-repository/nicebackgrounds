@@ -1,0 +1,29 @@
+/**
+ * General styles for the Nice Backgrounds plugin.
+ */
+
+@import "admin.constants.less";
+
+#nicebackgrounds-wrap {
+	position: relative;
+
+	.dashicons {
+		margin-right: 0.125em;
+	}
+}
+
+.add-status span.dashicons-update {
+	.spinner;
+}
+
+.nicebackgrounds-debug {
+	margin: 2em 0;
+	textarea {
+		font-size: 10px;
+		background-color: @highlight-color;
+		height: 350px;
+		width: 100%;
+		font-family: monospace;
+	}
+}
+
